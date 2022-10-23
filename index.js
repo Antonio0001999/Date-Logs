@@ -60,6 +60,7 @@ let today = new Date(Date.now());
 let todayUTC = new Date(Date.UTC());
 
 // GETTERS (There's also UTC variants if you are looking for UTC dates).
+let getTime = noArgsDate.getTime(); // Returns the number of milliseconds from 1st January 1970 to the date represented by this instance.
 let getMilliseconds = noArgsDate.getMilliseconds();
 let getSeconds = noArgsDate.getSeconds();
 let getMinutes = noArgsDate.getMinutes();
@@ -101,6 +102,7 @@ console.log("CONSTRUCTORS", {
 });
 console.log("---------------------------------------------------------------------------");
 console.log("GETTERS", {
+	GetTime: getTime,
 	GetMilliseconds: getMilliseconds,
 	GetSeconds: getSeconds,
 	GetMinutes: getMinutes,
